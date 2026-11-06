@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <?php include 'header.inc'; ?>
+
+    <h2>Login Page</h2>
+
+    <form action="process.php" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="hidden" name="token" value="N106393625">
+
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <?php include 'footer.inc'; ?>
+
+</body>
+</html>
